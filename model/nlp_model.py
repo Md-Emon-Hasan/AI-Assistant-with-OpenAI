@@ -1,4 +1,18 @@
-from transformers import TFAutoModelForCausalLM, AutoTokenizer, pipeline
+'''
+   Author  : Emon Hasan
+   Email   : iconicemon01@gmail.com
+   GitHub  : https://github.com/Md-Emon-Hasan
+   LinkedIn: https://www.linkedin.com/in/emon-hasan/
+   Date    : 01/07/2025
+   Time    : 09:11
+   Project : building won ai chatbot
+   Purpose : building a chatbot uing openai and hugging face
+'''
+
+# Import required libraries
+from transformers import TFAutoModelForCausalLM
+from transformers import AutoTokenizer
+from transformers import pipeline
 
 # Load model and tokenizer
 MODEL_NAME = "gpt2"  # Pretrained model

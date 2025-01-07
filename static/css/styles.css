@@ -1,6 +1,6 @@
 /* Body Background - ChatGPT style */
 body {
-    background: #e4e4e7;
+    background: #dbdbdb;
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
@@ -130,7 +130,7 @@ body {
 .footer {
     text-align: center;
     margin-top: 15px;
-    color: #5a5a5a;
+    color: #424242;
     font-size: 14px;
 }
 
