@@ -6,4 +6,4 @@ pytest
 tensorflow
 keras
 tf-keras
-transformers
+tensorflow-cpu
