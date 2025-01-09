@@ -9,6 +9,24 @@
    Purpose : building a chatbot uing openai and hugging face
 '''
 
+import os
+import tensorflow as tf
+
+# Set environment variable to disable GPU usage
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
+
+# Suppress TensorFlow logs and warnings
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'  # Suppress all logs (only errors are shown)
+
+# Optional: Set TensorFlow logger to only show errors
+tf.get_logger().setLevel('ERROR')
+
+# Check if TensorFlow is detecting a GPU (It should not)
+if tf.config.list_physical_devices('GPU'):
+    print("TensorFlow is using GPU, which is not expected as we disabled it.")
+else:
+    print("TensorFlow is using the CPU as expected.")
+
 # Import required libraries
 from flask import Flask
 from flask import request
