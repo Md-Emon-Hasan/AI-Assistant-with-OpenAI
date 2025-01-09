@@ -4,3 +4,6 @@ transformers
 gunicorn
 pytest
 tensorflow
+keras
+tf-keras
+transformers
